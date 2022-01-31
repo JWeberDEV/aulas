@@ -12,14 +12,14 @@
       $limite = $_POST["limite"];
       $contador = $_POST["contador"];
 
-      if ($inicio > $limite) {
-        echo "caiu no if";
+      if ($inicio < $limite) {
+        
         while ($inicio <= $limite) {
           echo $inicio. " ";
           $inicio = $inicio + $contador;
         }
       }else {
-        echo "caiu no else";
+        
         while ($inicio >= $limite) {
           echo $inicio. " ";
           $inicio = $inicio - $contador;
