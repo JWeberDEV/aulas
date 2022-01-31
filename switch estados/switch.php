@@ -54,6 +54,8 @@
         
       }
     ?>
+    <br>
+    <button ><a href='index.php' >voltar</a></button>
 </div>
 </body>
 </html>
