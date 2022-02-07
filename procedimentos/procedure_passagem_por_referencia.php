@@ -9,22 +9,26 @@
 <div>
     
     <?php 
+      include "funcoes.php";
       // function executa tudo que esta dentro do corpo e no final exibe o resultado detro da propria estrutura
       // procedures executa tudo que esta dentro do corpo e retorna algo no final
+      // FORMAS_DE_PASSAGEM_DE PARAMETROS
 
-      function soma($a, $b){
-      $s = $a + $b;
-      echo "A soma vale: $s";  
+      //passagem por valor
+      function teste(&$x){
+      $x = $x -7;
+      echo "valor de X $x <br>";
       }
       
-      soma(7,8);
+      $a =3;
+      teste($a);
+      echo "Valor de A $a";
 
-      $x = 15;
-      $y = 13;
-
-      echo"<br>";
-
-      soma($x,$y);
+      echo "</br>";
+      echo "<h2>testando o include</h2>";
+      ola();
+      echo "</br>";
+      mostraValor("teste");
     ?>
 </div>
 </body>
