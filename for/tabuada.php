@@ -10,14 +10,16 @@
     <?php 
       $n = isset($_POST["numero"])?$_POST["numero"]:'1';
       echo "A tabuada de $n é:";
-      
+
       for ($i=1; $i <=10 ; $i++) { 
         $result = $i * $n;
         
-        echo" <br>$i X $n = $result "; 
+        echo" <br>$i X $n = $result"; 
       }
       
     ?>
+      <br>
+      <button><a href="index.php">voltar</a></button>
 </div>
 </body>
 </html>
